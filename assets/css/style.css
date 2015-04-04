@@ -168,7 +168,7 @@ section.module.parallax h1 {
 }
 
 section.module.parallax-1 {
-    background-image: url("../img/tech.jpg");
+    background: url("../img/highfashion.jpg") 25% 15% no-repeat;
     background-size: cover;
 }
 
