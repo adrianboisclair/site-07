@@ -1,5 +1,19 @@
 /* Main Structure */
 
+body::-webkit-scrollbar-track {
+    border: 1px solid black;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -32,7 +46,7 @@ h1 {
 
 /* Header & Nav */
 header {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, .75);
     display: flex;
     position: fixed;
     height: 120px;
@@ -45,9 +59,11 @@ header {
     transition: height 0.2s linear 0.2s, padding 0.2s linear 0s;
     overflow: hidden;
 }
+
 .nav-bar {
     display: flex;
 }
+
 .nav-bar a {
     font-family: "Roboto Slab", sans-serif;
     color: #000000;
@@ -70,7 +86,7 @@ header {
 
 .logo {
     font-family: "Roboto Slab", sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 300;
     font-size: 35px;
     padding: .5em;
@@ -78,7 +94,6 @@ header {
     transition: font-size .2s;
 
 }
-
 
 /* Flex-Containers */
 
@@ -225,6 +240,7 @@ article {
     font-family: "Roboto Slab", sans-serif;
 
 }
+
 .blog-entry {
     display: flex;
     justify-content: space-between;
@@ -241,18 +257,22 @@ article {
     align-content: center;
     overflow: hidden;
 }
+
 .blog-entry img {
     display: flex;
     height: 100px;
 }
+
 .title {
     font-size: 1.5em;
 }
+
 #datePosted {
     font-size: smaller;
     margin-top: .5em;
     margin-bottom: .5em;
 }
+
 #name {
     margin-top: .5em;
     margin-bottom: .5em;
