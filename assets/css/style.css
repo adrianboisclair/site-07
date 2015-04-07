@@ -172,7 +172,6 @@ section.module.parallax {
     -o-background-size: cover;
     background-size: cover;
 }
-
 section.module.parallax h1 {
     color: rgba(255, 255, 255, 0.8);
     font-size: 48px;
@@ -182,12 +181,9 @@ section.module.parallax h1 {
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 section.module.parallax-1 {
-    background: url("../img/highfashion.jpg") 100% 100% no-repeat;
-    background-size: cover;
+    background-image: url("../img/highfashion.jpg");
 }
-
 /* Articles */
 article {
     text-align: justify;
@@ -418,5 +414,4 @@ footer {
     /*section.module.parallax h1 {*/
     /*font-size: 160px;*/
     /*}*/
-
 }

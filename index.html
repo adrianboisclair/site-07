@@ -1,35 +1,70 @@
 <!DOCTYPE html>
 <html>
+<!--
+ This is a template site.  Everything in squar brackets, or [] will be replaced with the respected data.
+
+ Prior to reviewing this work please note that it us understood that the reader has at least some minimal
+ HTML, CSS, and JavaScript background.  That being said..
+
+
+ ---DO NOT FORGET---
+ if an element has a class...
+    ie. <div class="wrapper"></div>
+should you want to edit the element's appearance you must refer to the style.css file and find the .wrapper {...} entry.
+Remember the parents affect the children.
+
+MUST READ
+in order to understand this site user should be familiar with CSS FlexBox and it's properties and how if affects it's
+children.
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+-->
+<!--End Message-->
+<!--Document Head
+This is where we will put our meta tags, title, font imports, style imports, etc.
+
+*meta tags*
+important things to note:
+    name="viewport" - this ensures that, if viewed on a mobile device that the viewport will be the device screen size.
+-->
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="description" content="CelebrityFashion.info blog">
     <meta name="keywords" content="Celebrity fashion trends kardashion styles">
     <meta name="author" content="Adrian Boisclair">
     <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>[ENTER TITLE HERE]</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
+
+<!-- getData() function starts the AJAX call to load blogger content -->
 <body onload="getData()">
+
+
+<!--
+Here we begin the site content beginning with a div of class wrapper, which has width=100% and margin=0.
+The header element has a class of nav-bar and an id header which gives it full width across the screen.
+-->
+
 <div class="wrapper">
     <header class="nav-bar" id="header">
-        <div class="container flex-container" id="nav-nav-bar">
-            <div class="logo" id="logo">CelebrityFashion.info</div>
-            <a class="link" href="#">Home</a>
-            <a class="link" href="#">About</a>
-            <a class="link" href="#">Blog</a>
-            <a class="link" href="#">Store</a>
-            <a class="link" href="#">Forum</a>
+        <div class="container flex-container" id="nav-nav-bar"><!-- this div holds all of our links-->
+            <div class="logo" id="logo">CelebrityFashion.info</div><!--Here is our logo-->
+            <a class="link" href="#">Home</a><!--Link1-->
+            <a class="link" href="#">About</a><!--Link2-->
+            <a class="link" href="#">Blog</a><!--Link3-->
+            <a class="link" href="#">Store</a><!--Link4-->
+            <a class="link" href="#">Forum</a><!--Link5-->
         </div>
-    </header>
-    <main>
-        <section class="module parallax parallax-1">
-            <div class="container"></div>
-        </section>
-        <section class="module content">
-            <div class="flex-container tag-line">
-                <div class="wrap">
+    </header><!--End of the header-->
+    <main><!--Beginning of main content-->
+        <section class="module parallax parallax-1"></section><!-- This is the Parallax div and container -->
+        <section class="module content"><!-- This is the banner div and container -->
+            <div class="flex-container tag-line"><!-- This is the "tag line" div and container -->
+                <div class="wrap"><!-- wraps around content and aligns it properly -->
                     <h2>Need help with your wild style?</h2>
                     <a class="link-btn" href="#">Contact Us!</a>
                 </div>
